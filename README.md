@@ -27,9 +27,18 @@ Most of our design and branding work has been done in Figma.
 - [Service Blueprint](https://miro.com/app/board/uXjVNwNt7UU=/)
 - [UI Kit](https://mirayberber.notion.site/22aae19dfc484314860ff92dae1f06fc?v=5ecfe15b0fed4a29bd136e7c241c300b)
 
+### Communication
+
+- Summer 2024 presentation: ~30 mins at Civic Tech TO
+  - [CTTO Presentation Video](https://www.youtube.com/watch?v=qAeNPwS0nsc)
+  - [Slides](https://docs.google.com/presentation/d/1G5YKUJeCWUA_gxVQwAST3gu_htRciCCLDigS9SMAcB4/edit#slide=id.p)
+
 ### Research
 
 - [Competitor Research](https://docs.google.com/document/d/1elEecJB4TIAs_32OuDFo6MFeGFJsiQIpG1Cug3M1O78/edit#heading=h.7hgpx7s3h7vc)
 - [Dashboard Research](https://docs.google.com/document/d/1hqpVNA4QdBLm5yp9ayR6jIdAdFPkd4ItJN9Q1pIE4d8/edit#heading=h.b4e59kfxjahy)
 
+### Funding
 
+- [Donation Page](https://opencollective.com/tRacket): our page set up for receiving donations on Open Collective
+- 
