@@ -2,9 +2,9 @@
 
 This repo serves as the main directory for all documents & tasks related to strategy and design, including
 - our design system for the wesite and dashboard,
-- branding,
+- branding & communication,
 - research (competitor, funding, etc),
-- communication,
+- project management (roadmaps),
 - internal governance documents,
 - policies (Terms of Use, Privacy Policy).
 
@@ -27,6 +27,10 @@ Most of our design and branding work has been done in Figma.
 - [Dashboard Product Design](https://docs.google.com/document/d/1M9QK54uDqdG1fNGvXMjp4zec1j0lOQgcCG_oFATnUsE/edit#heading=h.rwew06srycqu)
 - [Service Blueprint](https://miro.com/app/board/uXjVNwNt7UU=/)
 - [UI Kit](https://mirayberber.notion.site/22aae19dfc484314860ff92dae1f06fc?v=5ecfe15b0fed4a29bd136e7c241c300b)
+
+### Project Management
+
+- [Project Roadmaps](https://www.figma.com/board/dwpnLA1XlJW7DunhDGpbgb/tRacket-Roadmap?node-id=110-815&t=U58gcVjm3lUH2YE7-1)
 
 ### Communication
 
