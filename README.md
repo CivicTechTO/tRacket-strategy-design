@@ -37,6 +37,8 @@ Most of our design and branding work has been done in Figma.
 - Summer 2024 presentation: ~30 mins at Civic Tech TO
   - [CTTO Presentation Video](https://www.youtube.com/watch?v=qAeNPwS0nsc)
   - [Slides](https://docs.google.com/presentation/d/1G5YKUJeCWUA_gxVQwAST3gu_htRciCCLDigS9SMAcB4/edit#slide=id.p)
+- Intro to tRacket: ~20 mins
+  - [Slides](https://docs.google.com/presentation/d/1T6G0vKO8HGEziB60pxywa2lPjJ7M5fUSkO1vhcTDccA/edit#slide=id.g2f9908bdde9_0_16)
  
 ### Policies
 
