@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setup Instructions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1&display=swap"
+    />
+    <style>
+      :root {
+        --bg: #fff9f0;
+        --surface: #fffefc;
+        --primary: #2c7bb2;
+        --secondary: #fb9500;
+        --text: #2d2d2d;
+        --muted: #6d6d6d;
+        --border: #f4e6d8;
+        --shadow: 0 10px 30px rgba(44, 123, 178, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: 'Inter', sans-serif;
+      }
+
+      .page {
+        width: min(1000px, calc(100vw - 64px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #f7fbff, #fffefc);
+        border: 1px solid #e8f1f8;
+        border-radius: 28px;
+        padding: 36px 40px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero h1 {
+        margin: 0;
+        font-family: 'Familjen Grotesk', sans-serif;
+        font-size: 3rem;
+        line-height: 1.1;
+        color: var(--primary);
+      }
+
+      .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        margin-top: 28px;
+      }
+
+      .step-card {
+        background: var(--surface);
+        border: 1px solid #f8efe8;
+        border-radius: 24px;
+        padding: 24px;
+        box-shadow: 0 4px 14px rgba(45, 45, 45, 0.04);
+      }
+
+      .step-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 54px;
+        border-radius: 16px;
+        background: #fff4e8;
+        color: var(--secondary);
+        font-family: 'Familjen Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 1.6rem;
+      }
+
+      .step-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 58px;
+        height: 58px;
+        border-radius: 18px;
+        background: #eaf3fb;
+        color: var(--primary);
+      }
+
+      .material-symbols-rounded {
+        font-family: 'Material Symbols Rounded';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 1;
+      }
+
+      .step-card h2 {
+        margin: 0;
+        font-family: 'Familjen Grotesk', sans-serif;
+        font-size: 1.7rem;
+        line-height: 1.2;
+      }
+
+      .step-card p {
+        margin: 14px 0 0;
+        font-size: 0.98rem;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      @media (max-width: 760px) {
+        .page {
+          width: min(100vw - 32px, 1000px);
+          padding: 24px 0;
+        }
+
+        .hero {
+          padding: 24px;
+        }
+
+        .hero h1 {
+          font-size: 2.2rem;
+        }
+
+        .steps-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-label="Setup instructions overview">
+        <h1>Setup Instructions</h1>
+      </section>
+
+      <section id="stepsContainer" class="steps-grid" aria-label="Setup steps"></section>
+    </main>
+
+    <script>
+      fetch('steps.json')
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Unable to load setup steps');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const container = document.getElementById('stepsContainer');
+
+          data.steps.forEach((step) => {
+            const card = document.createElement('article');
+            card.className = 'step-card';
+            card.innerHTML = `
+              <div class="step-top">
+                <span class="step-number">${step.number}</span>
+                <span class="step-icon" aria-hidden="true">
+                  <span class="material-symbols-rounded">${step.icon}</span>
+                </span>
+              </div>
+              <h2>${step.title}</h2>
+              <p>${step.description}</p>
+            `;
+            container.appendChild(card);
+          });
+        })
+        .catch((error) => {
+          const container = document.getElementById('stepsContainer');
+          container.innerHTML = '<p>Unable to load setup instructions.</p>';
+          console.error(error);
+        });
+    </script>
+  </body>
+</html>

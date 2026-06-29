@@ -1,0 +1,40 @@
+{
+  "steps": [
+    {
+      "number": 1,
+      "title": "Create Your Account",
+      "icon": "person_add",
+      "description": "Sign up with your email address and choose a secure password to get started."
+    },
+    {
+      "number": 2,
+      "title": "Verify Your Email",
+      "icon": "mark_email_unread",
+      "description": "Open the confirmation email and click the verification link to activate your account."
+    },
+    {
+      "number": 3,
+      "title": "Download the App",
+      "icon": "download",
+      "description": "Install the latest version of the app on your preferred device and sign in."
+    },
+    {
+      "number": 4,
+      "title": "Connect Your Device",
+      "icon": "devices",
+      "description": "Pair your device using the on-screen instructions and confirm the connection."
+    },
+    {
+      "number": 5,
+      "title": "Set Your Preferences",
+      "icon": "tune",
+      "description": "Adjust notifications, privacy settings, and display options to fit your workflow."
+    },
+    {
+      "number": 6,
+      "title": "Start Using It",
+      "icon": "play_circle",
+      "description": "Complete the welcome tour and begin your first setup task with confidence."
+    }
+  ]
+}
