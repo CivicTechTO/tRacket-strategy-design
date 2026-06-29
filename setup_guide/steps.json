@@ -2,39 +2,39 @@
   "steps": [
     {
       "number": 1,
-      "title": "Create Your Account",
-      "icon": "person_add",
-      "description": "Sign up with your email address and choose a secure password to get started."
+      "title": "Choose the Best Mounting Spot",
+      "icon": "place",
+      "description": "Place the sensor on the exterior of your home, facing the direction of the most persistent source of noise, with a power source nearby. Pick a location that is not likely to get knocked or be especially exposed to rain, snow, or wind; a window or covered patio is generally a good choice."
     },
     {
       "number": 2,
-      "title": "Verify Your Email",
-      "icon": "mark_email_unread",
-      "description": "Open the confirmation email and click the verification link to activate your account."
+      "title": "Secure the Sensor",
+      "icon": "sensors",
+      "description": "Attach the sensor using screws, cable ties, or foam tape, with the cable connector facing down."
     },
     {
       "number": 3,
-      "title": "Download the App",
-      "icon": "download",
-      "description": "Install the latest version of the app on your preferred device and sign in."
+      "title": "Plan and Route the Cable",
+      "icon": "cable",
+      "description": "Decide how you will run the cable from the power outlet to the device. Plan to run it along edges, corners, or walls where it will be less visible and not in the way. Measure how long a cable you will need, then add a little extra. Common USB cable lengths are 3, 6, 10, 20, and 30 feet, and USB cables longer than 30 feet are not recommended."
     },
     {
       "number": 4,
-      "title": "Connect Your Device",
-      "icon": "devices",
-      "description": "Pair your device using the on-screen instructions and confirm the connection."
+      "title": "Install the Cable and Power On",
+      "icon": "power",
+      "description": "Install the cable and plug in the device. Use cable ties and mounts to secure the cable in place, then plug the device into a USB charger."
     },
     {
       "number": 5,
-      "title": "Set Your Preferences",
-      "icon": "tune",
-      "description": "Adjust notifications, privacy settings, and display options to fit your workflow."
+      "title": "Connect to the Setup Wi‑Fi",
+      "icon": "wifi",
+      "description": "Once the sensor is plugged in, use your computer or phone to connect to the sensor’s Wi‑Fi network called “tRacket_Setup” using the password “noise123”. In your browser, you will see a form to fill in your own Wi‑Fi login info and email address. If needed, select “Sign into network” for the browser to open. Be sure to enter your exact Wi‑Fi network name and password."
     },
     {
       "number": 6,
-      "title": "Start Using It",
-      "icon": "play_circle",
-      "description": "Complete the welcome tour and begin your first setup task with confidence."
+      "title": "Finish Setup and Log In",
+      "icon": "login",
+      "description": "The sensor will try to connect to the Wi‑Fi and internet. If it is unsuccessful, it will ask you to try again. Once successful, you will receive an email confirming that the sensor is online with a link to log in to the sensor manager. You can now log in to the sensor manager to specify the sensor location."
     }
   ]
 }
