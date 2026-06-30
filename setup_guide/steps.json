@@ -2,7 +2,7 @@
   "steps": [
     {
       "number": 1,
-      "title": "Choose the Best Mounting Spot",
+      "title": "Choose a Protected Spot Outside",
       "icon": "place",
       "description": "Place the sensor on the exterior of your home, facing the direction of the most persistent source of noise, with a power source nearby. Pick a location that is not likely to get knocked or be especially exposed to rain, snow, or wind; a window or covered patio is generally a good choice."
     },
@@ -10,13 +10,13 @@
       "number": 2,
       "title": "Secure the Sensor",
       "icon": "sensors",
-      "description": "Attach the sensor using screws, cable ties, or foam tape, with the cable connector facing down."
+      "description": "Attach the sensor using screws, cable ties, or foam tape, with the cable connector facing down. Make sure the mic whole remains unobstructed."
     },
     {
       "number": 3,
       "title": "Plan and Route the Cable",
       "icon": "cable",
-      "description": "Decide how you will run the cable from the power outlet to the device. Plan to run it along edges, corners, or walls where it will be less visible and not in the way. Measure how long a cable you will need, then add a little extra. Common USB cable lengths are 3, 6, 10, 20, and 30 feet, and USB cables longer than 30 feet are not recommended."
+      "description": "Decide how you will run the cable from the power outlet to the device. Plan to run it along edges, corners, or walls where it will be less visible and not in the way. Measure how long a cable you will need, then add a little extra. Common USB cable lengths are 3, 6, 10, 20, and 30 feet; USB cables longer than 30 feet are not recommended."
     },
     {
       "number": 4,

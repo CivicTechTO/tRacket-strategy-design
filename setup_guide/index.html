@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Setup Instructions</title>
+    <title>tRacket Setup Instructions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@
       :root {
         --bg: #fff9f0;
         --surface: #fffefc;
-        --primary: #2c7bb2;
+        --primary: #003566;
         --secondary: #fb9500;
         --text: #2d2d2d;
         --muted: #6d6d6d;
@@ -44,7 +44,11 @@
       }
 
       .hero {
-        background: linear-gradient(135deg, #f7fbff, #fffefc);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        background: var(--primary);
         border: 1px solid #e8f1f8;
         border-radius: 28px;
         padding: 36px 40px;
@@ -56,7 +60,13 @@
         font-family: 'Familjen Grotesk', sans-serif;
         font-size: 3rem;
         line-height: 1.1;
-        color: var(--primary);
+        color: #fff;
+      }
+
+      .hero-logo {
+        width: 140px;
+        height: auto;
+        flex-shrink: 0;
       }
 
       .steps-grid {
@@ -67,6 +77,9 @@
       }
 
       .step-card {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+        gap: 18px;
         background: var(--surface);
         border: 1px solid #f8efe8;
         border-radius: 24px;
@@ -74,37 +87,40 @@
         box-shadow: 0 4px 14px rgba(45, 45, 45, 0.04);
       }
 
-      .step-top {
+      .step-number-column {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
         gap: 16px;
-        margin-bottom: 18px;
       }
 
       .step-number {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 54px;
-        height: 54px;
-        border-radius: 16px;
-        background: #fff4e8;
-        color: var(--secondary);
+        width: 34px;
+        height: 34px;
+        border-radius: 6px;
+        background: #dbeeff;
+        color: var(--primary);
         font-family: 'Familjen Grotesk', sans-serif;
         font-weight: 700;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
       }
 
       .step-icon {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 58px;
-        height: 58px;
-        border-radius: 18px;
+        width: 34px;
+        height: 34px;
+        border-radius: 6px;
         background: #eaf3fb;
         color: var(--primary);
+      }
+
+      .step-content {
+        min-width: 0;
       }
 
       .material-symbols-rounded {
@@ -152,7 +168,8 @@
   <body>
     <main class="page">
       <section class="hero" aria-label="Setup instructions overview">
-        <h1>Setup Instructions</h1>
+        <h1>tRacket <br />Setup Instructions</h1>
+        <img class="hero-logo" src="logo.png" alt="tRacket logo" />
       </section>
 
       <section id="stepsContainer" class="steps-grid" aria-label="Setup steps"></section>
@@ -173,14 +190,16 @@
             const card = document.createElement('article');
             card.className = 'step-card';
             card.innerHTML = `
-              <div class="step-top">
+              <div class="step-number-column">
                 <span class="step-number">${step.number}</span>
                 <span class="step-icon" aria-hidden="true">
                   <span class="material-symbols-rounded">${step.icon}</span>
                 </span>
               </div>
-              <h2>${step.title}</h2>
-              <p>${step.description}</p>
+              <div class="step-content">
+                <h2>${step.title}</h2>
+                <p>${step.description}</p>
+              </div>
             `;
             container.appendChild(card);
           });
